@@ -24,22 +24,22 @@
   - name: Create webapp folder
     become: yes
     file:
-      path: /opt/simple_webapp
+      path: /opt/simple-webapp
       state: directory
       owner: ec2-user
       group: ec2-user
 
   - name: Get app from GitHub
     git:
-      repo: "https://github.com/mattbrock/simple_webapp.git"
-      dest: /opt/simple_webapp
+      repo: "https://github.com/mattbrock/simple-webapp.git"
+      dest: /opt/simple-webapp
       force: yes
 
   - name: Copy systemd unit file to correct location
     become: yes
     copy:
       remote_src: yes
-      src: /opt/simple_webapp/simple-webapp.service
+      src: /opt/simple-webapp/simple-webapp.service
       dest: /usr/lib/systemd/system/simple-webapp.service
       owner: root
       group: root

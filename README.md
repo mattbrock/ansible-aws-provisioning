@@ -4,7 +4,7 @@ This is a suite of Ansible playbooks to provision an entire AWS infrastructure w
 
 This is currently configured for very modest requirements, with a maximum of three t2.micro instances for auto-scaling, but it's trivial to change these settings. There's no reason why this set of playbooks shouldn't handle scaling out to a much larger infrastructure, with more powerful and specialised instance types as needed.
 
-I created a very basic [Python webapp](https://github.com/mattbrock/simple_webapp) to use as an example for the deployment here, but you can replace that with your own webapp should you so wish.
+I created a very basic [Python webapp](https://github.com/mattbrock/simple-webapp) to use as an example for the deployment here, but you can replace that with your own webapp should you so wish.
 
 ## Installation/setup
 
@@ -22,7 +22,7 @@ These playbooks are run in the standard way, i.e:
 
 Note that Step 3 also requires the addition of `-i etc/inventory.aws_ec2.yml` to use the dynamic inventory.
 
-To deploy your own webapp instead of my [basic Python app](https://github.com/mattbrock/simple_webapp), you'll need to edit _[deploy\_staging.yml](deploy\_staging.yml)_ so that Step 3 deploys your app with your own specific requirements, files, configuration, etc.
+To deploy your own webapp instead of my [basic Python app](https://github.com/mattbrock/simple-webapp), you'll need to edit _[deploy\_staging.yml](deploy\_staging.yml)_ so that Step 3 deploys your app with your own specific requirements, files, configuration, etc.
 
 ## Playbooks for provisioning/deployment
 
