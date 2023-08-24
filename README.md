@@ -6,6 +6,8 @@ This is currently configured for very modest requirements, with a maximum of thr
 
 I created a very basic [Python webapp](https://github.com/mattbrock/simple-webapp) to use as an example for the deployment here, but you can replace that with your own webapp should you so wish.
 
+Accompanying [blog article](https://blog.cetre.co.uk/a-suite-of-ansible-playbooks-for-automated-aws-provisioning/).
+
 ## Installation/setup
 
 1. You'll need an [AWS](https://aws.amazon.com/) account with a [VPC](https://aws.amazon.com/vpc/) set up, and with a DNS domain set up in [Route 53](https://aws.amazon.com/route53/).
